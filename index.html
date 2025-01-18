@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Central</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e6b1462ac.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body onmousemove="moveBackground(event)"> 
+    <section id="landing-page">
+    <nav>
+        <figure>
+            <img class="logo" src="favicon-32x32.png">
+        </figure>
+        <ul class="nav__link--list">
+            <li class="nav__link">
+                <a href="#" class="
+                nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black
+                ">Home</a>
+            </li>
+            <li class="nav__link">
+                <a href="#projects" class="
+                nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black
+                ">Find your Treasure</a>
+            </li>
+            <li class="nav__link" onclick="toggleModal()">
+                <a href="#" class="
+                nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black
+                ">Contact</a>
+            </li>
+            <li class="nav__link click">
+                <a href="#" class="
+                nav__link--anchor
+                link__hover-effect
+                "><i class="fas fa-adjust" onclick="toggleContrast()"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="title title--secondary">America's Best <span class="color-text">Anime</span> Merchant</h1>
+                Need help? <span class="click color-text" onclick="toggleModal()">We've got your back.</span></p>
+
+            </div>
+        </div>
+    </header>
+    <div class="">Find your next show, trinket, or manga</div>
+    <div>
+        <input type="text" placeholder="Search by Title, Studio or Keyword">
+    </div>
+
+
+    <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title">Anime Central</h3>
+            <h4 class="modal__sub-title modal__sub-title--about">One Stop Shop</h4>
+            <p class="modal__para">
+                Welcome to <b class="color-text">Anime Central</b>, where we provide a smooth shopping experience for any anime item you may want! <b class="color-text">Satisfaction Guaranteed</b>.
+            </p>
+            <p class="modal__para">
+                You can expect <b class="color-text">quality</b>, <b class="color-text">variety</b>, and <b class="color-text">customer service</b>.
+            </p>
+            <div class="modal__imgs">
+                <figure class="modal__img">
+                    <img src="/assets/smart-tv-icon-on-transparent-background-free-png.webp" class="modal_language--img" alt="anime">
+                    <span class="img__name">Anime</span>
+                </figure>
+                <figure class="modal__img">
+                    <img src="/assets/manga.book.v1.png"class="modal_language--img"  alt="manga">
+                    <span class="img__name">Manga</span>
+                </figure>
+                <figure class="modal__img">
+                    <img src="assets/figure.silhouette.png" class="modal_language--img"  alt="figures">
+                    <span class="img__name">Figures</span>
+                </figure>
+                <figure class="modal__img">
+                    <img src="assets/anime.trinkets.png" class="modal_language--img"  alt="trinkets">
+                    <span class="img__name">Trinkets</span>
+                </figure>
+            </div>
+        </div>
+        <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+            <h3 class="modal__title modal__title--contact">
+                Any Questions?
+            </h3>
+            <h4 class="modal__title modal__sub-title--contact">
+                We are here to assist!
+            </h4>
+            <form id="contact__form=" action="" onsubmit="contact(event)">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input type="text" class="input" name="user_name" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input type="email" class="input" name="user_email" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea type="text" class="input" name="message" required></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit">
+                    Send it over
+                </button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thank you for your interest! I look forward to speaking with you shortly.
+            </div>
+        </div>
+    </div>
+
+    <img class="shape shape--0" src="/assets/25712576_7052238.svg">
+    <img class="shape shape--1" src="/assets/25712577_7052247.svg">
+    <img class="shape shape--2" src="/assets/25712574_7052229.svg">
+    <img class="shape shape--3" src="/assets/25712566_7052194.svg">
+    <img class="shape shape--4" src="/assets/25712569_7052201.svg">
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__row">
+            <figure>
+            <img src="favicon-32x32.png" class="logo" alt="Logo">
+            </figure>
+            <div class="footer__social--list">
+                <a href="https://github.com/WretchedAbyss11" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">
+                Developement</a>
+                <a href="https://www.linkedin.com/in/1darianwalker" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">
+                Careers</a>
+                <a href="https://www.freepik.com/" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">
+                Attributions</a>
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white" onclick="toggleModal()">
+                Contact</a>
+            </div>
+            <div class="footer__copyright">Copyright © Made by Darian Walker</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
