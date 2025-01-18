@@ -15,7 +15,7 @@
     <section id="landing-page">
     <nav>
         <figure>
-            <img class="logo" src="favicon-32x32.png">
+            <img class="logo click" src="favicon-32x32.png" onclick="toggleModal()">
         </figure>
         <ul class="nav__link--list">
             <li class="nav__link">
@@ -47,45 +47,49 @@
             </li>
         </ul>
     </nav>
+    <figure>
+        <img class="anime__background" src="assets/420860-digital-art-Japanese-Art-night-street-rain-Market.jpg">
+    </figure>
     <header class="header">
         <div class="header__content">
-            <h1 class="title title--secondary">America's Best <span class="color-text">Anime</span> Merchant</h1>
-                Need help? <span class="click color-text" onclick="toggleModal()">We've got your back.</span></p>
-
+            <h1 class="title title--secondary">America's Favorite <span class="color-text">Anime Shop</span></h1>
             </div>
         </div>
-    </header>
-    <div class="">Find your next show, trinket, or manga</div>
-    <div>
-        <input type="text" placeholder="Search by Title, Studio or Keyword">
+        <br>
+    <div class="search__input--header"><h1>Find your next show, trinket, or manga</h1>
+        <div class="search__wrapper">
+            <input class="search__input" type="text" placeholder="Search by Title, Studio or Keyword">
+            <button class="search--button" onclick="search()">Search</button>
+        </div>
     </div>
-
-
+    </header>
+    <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+    </button>
     <div class="modal">
         <div class="modal__half modal__about">
-            <h3 class="modal__title">Anime Central</h3>
-            <h4 class="modal__sub-title modal__sub-title--about">One Stop Shop</h4>
+            <h3 class="modal__title">One Stop Shop</h3>
             <p class="modal__para">
-                Welcome to <b class="color-text">Anime Central</b>, where we provide a smooth shopping experience for any anime item you may want! <b class="color-text">Satisfaction Guaranteed</b>.
+                Welcome to <b class="color-text">Anime Central</b>, where we provide a smooth shopping experience for any item you may want! <b class="color-text">Satisfaction Guaranteed</b>.
             </p>
             <p class="modal__para">
                 You can expect <b class="color-text">quality</b>, <b class="color-text">variety</b>, and <b class="color-text">customer service</b>.
             </p>
             <div class="modal__imgs">
                 <figure class="modal__img">
-                    <img src="/assets/smart-tv-icon-on-transparent-background-free-png.webp" class="modal_language--img" alt="anime">
+                    <img src="/assets/smart-tv-icon-on-transparent-background-free-png.webp" class="modal_about--img modal_about--img-1" alt="anime">
                     <span class="img__name">Anime</span>
                 </figure>
                 <figure class="modal__img">
-                    <img src="/assets/manga.book.v1.png"class="modal_language--img"  alt="manga">
+                    <img src="/assets/manga.book.v1.png"class="modal_about--img"  alt="manga">
                     <span class="img__name">Manga</span>
                 </figure>
                 <figure class="modal__img">
-                    <img src="assets/figure.silhouette.png" class="modal_language--img"  alt="figures">
+                    <img src="assets/figure.silhouette.png" class="modal_about--img"  alt="figures">
                     <span class="img__name">Figures</span>
                 </figure>
                 <figure class="modal__img">
-                    <img src="assets/anime.trinkets.png" class="modal_language--img"  alt="trinkets">
+                    <img src="assets/anime.trinkets.png" class="modal_about--img modal_about--img-2"  alt="trinkets">
                     <span class="img__name">Trinkets</span>
                 </figure>
             </div>
@@ -123,19 +127,21 @@
             </div>
         </div>
     </div>
-
     <img class="shape shape--0" src="/assets/25712576_7052238.svg">
     <img class="shape shape--1" src="/assets/25712577_7052247.svg">
     <img class="shape shape--2" src="/assets/25712574_7052229.svg">
     <img class="shape shape--3" src="/assets/25712566_7052194.svg">
     <img class="shape shape--4" src="/assets/25712569_7052201.svg">
-
+    <img class="shape shape--5" src="/assets/25712576_7052238.svg">
+    <img class="shape shape--6" src="/assets/25712577_7052247.svg">
+    <img class="shape shape--7" src="/assets/25712566_7052194.svg">
+    <img class="shape shape--8" src="/assets/25712569_7052201.svg">
     </section>
     <footer>
         <div class="container">
             <div class="footer__row">
             <figure>
-            <img src="favicon-32x32.png" class="logo" alt="Logo">
+            <a href="#landing-page"><img src="favicon-32x32.png" class="logo click" alt="Logo"></a>
             </figure>
             <div class="footer__social--list">
                 <a href="https://github.com/WretchedAbyss11" target="_blank" class="
@@ -153,10 +159,10 @@
                 link__hover-effect
                 link__hover-effect--white">
                 Attributions</a>
-                <a href="#" class="
+                <a href="#landing-page" onclick="toggleModal()" class="
                 footer__social--link
                 link__hover-effect
-                link__hover-effect--white" onclick="toggleModal()">
+                link__hover-effect--white">
                 Contact</a>
             </div>
             <div class="footer__copyright">Copyright © Made by Darian Walker</div>

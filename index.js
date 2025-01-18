@@ -24,6 +24,11 @@ else {
 }
 }
 
+function search(event) {
+    event.preventDefault();
+    const loading = document.querySelector('.search--loading');
+}
+
 function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading');
