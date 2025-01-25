@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Central</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Find Your Treasure</title>
+    <link rel="stylesheet" href="treasures.css">
     <script src="https://kit.fontawesome.com/1e6b1462ac.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
     <link rel="manifest" href="/site.webmanifest">
 </head>
-<body onmousemove="moveBackground(event)"> 
-    <section id="landing-page">
+<body onmousemove="moveBackground(event)">
+<section>
     <nav>
         <figure>
             <img class="logo click" src="favicon-32x32.png" onclick="toggleModal()">
         </figure>
         <ul class="nav__link--list">
             <li class="nav__link">
-                <a href="#landing-page" class="
+                <a href="index.html" class="
                 nav__link--anchor
                 link__hover-effect
                 link__hover-effect--black
@@ -47,21 +47,10 @@
             </li>
         </ul>
     </nav>
+</section>
     <figure>
         <img class="anime__background" src="assets/420860-digital-art-Japanese-Art-night-street-rain-Market.jpg">
     </figure>
-    <header class="header">
-        <div class="header__content">
-            <h1 class="title title--secondary">America's Favorite <span class="color-text">Anime Shop</span></h1>
-            </div>
-        </div>
-        <br>
-    <div class="search__input--header"><h1>Find your next show, trinket, or manga</h1></div>
-        <form class="search__wrapper">
-            <input class="search__input" type="text" placeholder="Search by Title, Studio or Keyword">
-            <i class="fa-solid fa-magnifying-glass" onclick="searchBar()"></i>
-        </form>            
-    </header>
     <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
     </button>
@@ -168,6 +157,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 </html>
