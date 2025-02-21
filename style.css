@@ -497,7 +497,6 @@ display: flex;
 .search__input {
     outline: none;
     border: none;
-    cursor: pointer;
     border-radius: 24px;
     width: 0;
     padding: 1rem 2rem;
@@ -512,11 +511,11 @@ display: flex;
     margin: -4px -40px;
     filter: invert(0);
     cursor: pointer;
-    transition: width .5s ease-in;
 }
 
 .search__input:focus {
-    width: 580px;
+    width: 520px;
+    cursor: text;
 }
 
 ::placeholder {

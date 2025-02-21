@@ -152,6 +152,10 @@ nav,
     filter: invert(0);
 }
 
+.color {
+    color: rgb(53, 42, 209);
+}
+
 /*
     CONTRAST
 */
@@ -556,4 +560,73 @@ footer {
 .shape--8 {
     top: 95vh;
     left: 80vw;
+}
+
+/*
+Treasures Page
+*/
+
+.treasure__img {
+	max-height: 300px;
+	transition: all 300ms ease;
+	cursor: no-drop;
+}
+.treasure__img--wrapper {
+	overflow: hidden;
+}
+.treasures {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.treasure {
+	padding: 24px;
+	max-width: 25%;
+}
+.treasure__title {
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+.treasure:hover .treasure__img {
+	transform: scale(1.04);
+	overflow: hidden;
+}
+.treasure:hover .treasure__title {
+	text-decoration: underline;
+	cursor: no-drop;
+}
+
+.treasure__price {
+	font-weight: 700;
+}
+.treasure__price--full {
+	text-decoration: line-through;
+	color: lightgrey;
+}
+
+.treasures__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+}
+
+.treasures__header--title {
+	margin-bottom: 0;
+}
+
+.treasures__loading--spinner {
+	display: none;
+}
+
+.treasures__loading .treasures__loading--spinner {
+	display: block;
+}
+
+.treasures__loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 60px;
+	font-size: 60px;
 }

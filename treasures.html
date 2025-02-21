@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Your Treasure</title>
+    <title>Treasure Hunting</title>
     <link rel="stylesheet" href="treasures.css">
     <script src="https://kit.fontawesome.com/1e6b1462ac.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-
+    <script src="index.js"></script>
+    <script src="treasures.js"></script>
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body onmousemove="moveBackground(event)">
@@ -47,9 +48,27 @@
             </li>
         </ul>
     </nav>
-</section>
     <figure>
+    <div class="container">
+        <div class="row">
+            <div class="treasure__header">
+                <h2 class="section__title treasure__header--title ">
+                All <span class="color">Treasures</span>
+                </h2>
+                <select id="filter" onchange="filterTreasure(event)">
+                <option value="" disabled selected>Sort</option>
+                <option value="LOW_TO_HIGH">Price, Low to High</option>
+                <option value="HIGH_TO_LOW">Price, High to Low</option>
+                <option value="MANGA">Manga</option>
+                </select>
+            </div> 
+            <div class="treasures treasure__loading">
+                <i class="fas fa-spinner treasures__loading--spinner color"></i>
+            </div>
+        </div>
+    </div>
         <img class="anime__background" src="assets/420860-digital-art-Japanese-Art-night-street-rain-Market.jpg">
+
     </figure>
     <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
