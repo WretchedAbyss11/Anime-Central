@@ -184,12 +184,40 @@ function getTreasures() {
           salePrice: 19.95,
         },
         {
-          id: 19,
+         id: 19,
           title: "Dragon Ball Season 5",
           url: "assets/dragonball_season5.jpg",
           originalPrice: 29.95,
-          salePrice: 19.95,
-          },
+          salePrice: null,
+        },
+        {
+          id: 20,
+          title: "One Piece 4pk Pins",
+          url: "assets/one_piece4pk_pins.jpg",
+          originalPrice: 12.95,
+          salePrice: 7.95,
+        },
+        {            
+          id: 21,
+          title: "Demon Slayer 4pk Pins",
+          url: "assets/demonslayer4pk_pins.jpg",
+          originalPrice: 12.95,
+          salePrice: 7.95,
+        },
+        {
+          id: 20,
+          title: "Studio Ghibli 4pk Pins",
+          url: "assets/studio_ghibli4pk_pins.jpg",
+          originalPrice: 12.95,
+          salePrice: 7.95,
+        },
+        {
+          id: 21,
+          title: "Berserk 4pk Pins",
+          url: "assets/berserk4pk_pins.jpg",
+          originalPrice: 12.95,
+          salePrice: 7.95,
+        },
       ]);
     }, 1000)
   })
